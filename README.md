@@ -1,4 +1,4 @@
-# CodeVerse Hub 🚀
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27efa569-f731-41ce-9588-4f32ee536854" /># CodeVerse Hub 🚀
 
 A full-stack Q&A platform where software engineers share ideas, solve programming bugs, and help each other grow. Built with React + Vite on the frontend and Node.js + Express + MySQL on the backend.
 
@@ -6,7 +6,8 @@ A full-stack Q&A platform where software engineers share ideas, solve programmin
 
 ## 📸 Preview
 
-> _Add screenshots here after deploying_
+> _Add screenshots here after deploying_<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/054dd6f2-f5b2-4308-9051-aad66cdc5782" />
+
 
 ---
 
