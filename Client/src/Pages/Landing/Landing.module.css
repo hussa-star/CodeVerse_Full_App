@@ -1,0 +1,114 @@
+.hero {
+  min-height: calc(100vh - 80px); /* Fill space minus header height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.content {
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split screen into two equal sides */
+  align-items: center;
+  gap: 60px;
+}
+
+.tagline {
+  color: #fe8303;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.infoBox h1 {
+  font-size: 48px;
+  /* color: #23273a; */
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  /* color: #666; */
+  color: var(--secondary-text);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.ctaBtn {
+  background: #fe8303;
+  color: white;
+
+  border: none;
+  padding: 15px 35px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ctaBtn:hover {
+  background: #e07202;
+}
+
+.visualBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-color);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  border-left: 5px solid #516cf0; /* Nice blue vertical border indicator */
+}
+
+.card h3 {
+  /* color: #23273a; */
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.card p {
+  /* color: #777; */
+  background-attachment: fixed;
+  color: var(--secondary-text);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 0;
+    min-height: auto; /* allows natural height on small screens */
+  }
+
+  .content {
+    grid-template-columns: 1fr; /* stack left + right */
+    gap: 40px;
+    text-align: center;
+  }
+
+  .infoBox h1 {
+    font-size: 32px; /* reduce big heading */
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .visualBox {
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px; /* keeps cards neat on mobile */
+  }
+}

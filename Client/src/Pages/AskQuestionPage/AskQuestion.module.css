@@ -1,0 +1,90 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  color: var(--text-color);
+}
+
+.form {
+  /* background: white; */
+  background: var(--card-color);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form h2 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  font-size: 16px;
+  /* border: 1px solid #ddd; */
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--secondary-text);
+}
+
+.form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.form button {
+  background: #516cf0;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .form {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .form textarea {
+    min-height: 140px;
+  }
+
+  .form button {
+    padding: 10px;
+    font-size: 15px;
+  }
+}

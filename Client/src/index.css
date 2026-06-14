@@ -1,0 +1,33 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-color: #ffffff;
+  --border-color: #dddddd;
+  --secondary-text: #666666;
+  --muted-text: #999999;
+}
+
+body.dark {
+  --bg-color: #0f172a;
+  --text-color: #ffffff;
+  --card-color: #1e293b;
+  --border-color: #334155;
+  --secondary-text: #cbd5e1;
+  --muted-text: #94a3b8;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+*,
+*::before,
+*::after {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+html {
+  background-color: var(--bg-color);
+}

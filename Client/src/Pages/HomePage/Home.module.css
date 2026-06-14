@@ -1,0 +1,187 @@
+/* ───── Layout ───── */
+/* .container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+
+} */
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.askButton {
+  background: #516cf0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* .empty {
+  text-align: center;
+  color: #888;
+} */
+.empty {
+  text-align: center;
+  color: var(--secondary-text);
+}
+/* ───── Cards ───── */
+.card {
+  /* border: 1px solid #ddd; */
+  /* background: #fff; */
+  border: 1px solid var(--border-color);
+  background: var(--card-color);
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.cardTitle {
+  margin: 0 0 5px 0;
+  color: var(--text-color);
+}
+
+.cardContent {
+  margin: 0 0 10px 0;
+  /* color: #666; */
+  color: var(--text-color);
+}
+
+.cardMeta {
+  /* color: #999; */
+  color: var(--muted-text);
+}
+
+.cardAuthor {
+  color: #516cf0;
+}
+
+/* ───── Loader ───── */
+.loaderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+.loaderText {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  /* color: #8896c8; */
+  color: var(--secondary-text);
+  letter-spacing: 0.05em;
+}
+.welcomeBox {
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border-radius: 16px;
+  /* color: white; */
+  color: var(--text-color);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.welcomeBox h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.welcomeBox span {
+  color: #ffd700;
+
+  font-weight: bold;
+}
+
+.welcomeBox p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+.username {
+  color: #22c55e; /* green */
+  font-weight: 600;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .welcomeBox {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  .welcomeBox h1 {
+    font-size: 1.2rem;
+  }
+
+  .welcomeBox p {
+    font-size: 0.9rem;
+  }
+
+  .askButton {
+    width: 100%; /* full width button for mobile */
+    text-align: center;
+  }
+
+  .list {
+    gap: 12px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .cardContent {
+    font-size: 14px;
+  }
+
+  .cardMeta {
+    font-size: 12px;
+  }
+}

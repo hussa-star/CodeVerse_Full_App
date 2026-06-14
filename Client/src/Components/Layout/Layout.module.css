@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes up the complete height of the device screen */
+  /* background: #f5f7fb; */
+   background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.mainContent {
+  flex-grow: 1; /* Instructs main section to inflate and fill all remaining vertical workspace */
+}
